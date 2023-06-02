@@ -1,0 +1,124 @@
+.mobile-controls img {
+  height: 100px;
+}
+.navbar-brand span {
+  height: 200px;
+  width: 200px;
+}
+.navbar-brand {
+  padding: 0;
+}
+
+#navbarSupportedContent {
+  flex: none;
+  z-index: 999;
+}
+
+nav.navbar.navbar-light.bg-light {
+  background: transparent !important;
+  font-weight: bold;
+  padding: 0;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+li {
+  padding: 20px 0px;
+}
+.nav-item{
+  margin: 10px;
+}
+
+.fa-times {
+  float: right;
+  cursor: pointer;
+  width: auto;
+  font-size: 45px !important;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+.mobile-controls {
+  display: block;
+}
+.alarm-container {
+span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(217, 62, 62);
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items:center ;
+  top: 18px;
+  right: 146px;
+}
+}
+.avatar {
+  img {
+    width: 40px;
+    cursor: pointer;
+  }
+}
+.user-profile-pic {
+  align-self: center !important;
+  width: 2em;
+  height: 2em;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .nav-item {
+    display: none;
+  }
+  .navbar-collapse {
+    width: 100%;
+  }
+  .navbar-toggler{
+    float: right;
+  }
+  .navbar-brand span img{
+    display: none;
+  }
+  .mobile-controls {
+    display: block;
+  }
+
+  .mobile-show {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #cbcbcb;
+    padding: 17px 43px;
+  }
+
+  .mobile-show * {
+    color: #fff !important;
+  }
+
+  .mobile-show ul li.nav-item {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .mobile-show ul {
+    padding: 0;
+    margin-top: 55px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .mobile-show ul li.nav-item:last-child {
+    border-bottom: none;
+    margin-bottom: 15px;
+  }
+
+
+}

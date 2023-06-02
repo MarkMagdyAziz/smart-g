@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <div *ngFor="let task of paginatedTasks">
+    <div style="margin:10px">
+    <sg-task-item [task]="task"></sg-task-item>
+  </div>
+  </div>
+  <div class="d-flex justify-content-center">
+  <sg-pagination  [currentPage]="currentPage" [limit]="6" [total]="30" (changePage)="onPageChange($event)"></sg-pagination>
+</div>
+</div>

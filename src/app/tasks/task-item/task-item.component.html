@@ -1,0 +1,77 @@
+<div class="container-fluid">
+ <div class="row" [ngClass]="{
+  'status-running': task.status === 'Running',
+  'status-finished': task.status === 'Finished',
+  'status-queued': task.status === 'Queued',
+  'status-new': task.status === 'New'
+}">
+ <div class="row-line"></div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
+    <div class="item-paragraphs ms-5">
+      <p class="sub-header">Name</p>
+      <p class="item-header">{{task.name}}</p>
+      <p class="sub-header">#{{task.id}}</p>
+    </div>
+    <div class="vertical-line"></div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
+      <img style="width: 40px; height: 40px; margin-right: 10px;" [src]="getStatusIcon(task.status)" alt="status icon">
+     <div class="item-paragraphs">
+      <p class="sub-header">Status</p>
+      <p class="item-header status">{{task.status}} </p>
+    </div>
+    <div class="vertical-line"></div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
+    <img style="width: 40px; height: 40px; margin-right: 10px;" src="assets/icons/date.svg" alt="status icon">
+    <div class="item-paragraphs">
+      <p class="sub-header">Creation Date</p>
+      <p class="item-header">
+        {{task.createdAt | date:'yyyy-MM-dd HH:mm:ss' }}
+      </p>
+    </div>
+    <div class="vertical-line"></div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 task__item">
+    <div class="item-paragraphs">
+      <p class="sub-header">Selection Critera</p>
+      <div class="item__list" *ngFor="let criteria of task.selectionCriteria">
+        <div class="item__box"></div>
+        <p class="item-header">{{criteria}}</p>
+      </div>
+    </div>
+    <div class="vertical-line"></div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
+    <div class="item-paragraphs">
+      <p class="sub-header">Operations</p>
+      <div class="item__list" *ngFor="let operation of task.operations; let i = index">
+        <div class="item__box" *ngIf="i < 2" ></div>
+        <p class="item-header" *ngIf="i < 2"> {{operation}}</p>
+        <p class="sub-header" *ngIf="i === 2 && task.operations.length > 3">
+          <span style="cursor: pointer;">...view-more</span>
+        </p>
+      </div>
+    </div>
+    <div class="vertical-line"></div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
+    <div class="item-paragraphs">
+      <p class="sub-header">Tsk (220)</p>
+      <div class="item__list" *ngFor="let tsk of task.tsk210; let i = index">
+        <div class="progress-holder mb-1"  [ngStyle]="{
+          'border-color': tsk < 50 ? '#f57277':  tsk < 100 ?   '#0090ff'  : tsk < 200 ? '#12bb12' : ''}">
+          <div class="progress-filler" [ngStyle]="{
+            'background-color': tsk < 50 ? '#f57277':  tsk < 100 ?   '#0090ff'  : tsk < 200 ? '#12bb12' : ''}" [style.width.%]="tsk /2 || 0">
+          </div>
+          <span class="tsk-progress">{{tsk}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="Rectangle-25">
+      <span>Scheduled</span>
+    </div>
+    <img src="assets/icons/arrow.svg" alt="arrow">
+ </div>
+</div>
+</div>

@@ -1,0 +1,124 @@
+$running-color: #0090ff;
+$finished-color: #12bb12;
+
+.status-running{
+  background-color:#e5f4ff;
+}
+.status-finished{
+  background-color: #f6fff6;
+}
+.task__item .sub-header{
+  color: #a2a2a2;
+  padding: 0;
+  margin: 0;
+}
+.item-header{
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+.task__item {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.row{
+  border-top: 1px solid black; /* Add a top border */
+  border-bottom: 1px solid black; /* Add a bottom border */
+  border-right: 1px solid black; /* Add a right border */
+}
+.vertical-line {
+  float: right;
+  width: 1px;
+  height: 60px;
+  background-color: #858585;
+  margin: 10px 0;
+}
+.item-paragraphs{
+  margin-right: 10px
+}
+
+
+%r-line{
+  width: 2px;
+  height: 106px;
+  margin: 0 10px 0 0;
+  position: absolute
+}
+.status-running .row-line{
+  @extend %r-line;
+  background-color:$running-color;
+}
+.status-finished .row-line{
+  @extend %r-line;
+  background-color:$finished-color;
+}
+.status-queued .row-line{
+  @extend %r-line;
+  background-color: #00afd8;
+}
+.status-new .row-line{
+  @extend %r-line;
+  background-color: #00afd8;
+}
+
+.status{
+font-size: 22px;
+font-weight: bold;
+}
+.status-running .status{
+  color:$running-color;
+}
+.status-finished .status{
+  color:  $finished-color;
+}
+.status-queued .status{
+  color: #808080;
+}
+.status-new .status{
+  color:#000000;
+}
+.item__list {
+  display: flex;align-items: center;
+
+}
+.item__box{
+  width: 12px;height: 12px;background-color: #c5c5c5;margin: 0 1px
+}
+.progress-holder {
+  height: 20px;
+  background-color: transparent;
+  // overflow: hidden;
+  width: 100px;
+  border: 1px solid ;
+}
+.progress-filler {
+  height: 100%;
+  background-color: #5AB8B3;
+}
+.progress-text {
+  text-align: center;
+  width: 20%;
+}
+.tsk-progress{
+  font-size: 11px;
+    position: relative;
+    bottom: 24px;
+    right: 2px;
+    left: 52px;
+}
+
+.Rectangle-25 {
+  width: 100px;
+  height: 30px;
+  padding: 5px 12px 5px 10px;
+  border-radius: 10.5px;
+  background-color: #b4b4b4;
+  color: white;
+}
+@media (max-width: 991px){
+  %r-line{
+    height: 150px;
+  }
+}

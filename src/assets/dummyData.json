@@ -1,0 +1,344 @@
+[
+  {
+    "name": "Main Data Ethiopia",
+    "id": "TSK_216894891",
+    "status": "Running",
+    "createdAt": "2023-01-01T00:00:00.000Z",
+    "selectionCriteria":["Electricity Company of Ghana" , "Demo Region 1","Demo District 1"],
+    "operations":["Load Meter Profile" , "Comission with tariff","More ","And More" ,"And More"],
+    "tsk210":["120","50","20"]
+  },
+  {
+    "name": "Main Data Ethiopia",
+    "id": "TSK_216894891",
+    "status": "Queued",
+    "createdAt": "2023-01-01T00:00:00.000Z",
+    "selectionCriteria": ["Electricity Company of Ghana", "Demo Region 1", "Demo District 1"],
+    "operations": ["Load Meter Profile", "Commission with tariff", "More", "And More", "And More"],
+    "tsk210": ["120", "50", "20"]
+  },
+  {
+    "name": "Main Data Kenya",
+    "id": "TSK_987654321",
+    "status": "Finished",
+    "createdAt": "2023-02-15T00:00:00.000Z",
+    "selectionCriteria": ["Water Utility Company", "Demo Region 2", "Demo District 2"],
+    "operations": ["Meter Reading", "Billing and Invoicing", "Maintenance", "Data Analytics"],
+    "tsk210": ["80", "30", "15"]
+  },
+  {
+    "name": "Main Data Nigeria",
+    "id": "TSK_456789123",
+    "status": "New",
+    "createdAt": "2023-03-10T00:00:00.000Z",
+    "selectionCriteria": ["Gas Company", "Demo Region 3", "Demo District 3"],
+    "operations": ["Asset Management", "Demand Response", "Network Optimization"],
+    "tsk210": ["90", "40", "25"]
+  },
+  {
+    "name": "Main Data Ghana",
+    "id": "TSK_654789321",
+    "status": "New",
+    "createdAt": "2023-04-05T00:00:00.000Z",
+    "selectionCriteria": ["Telecom Company", "Demo Region 4", "Demo District 4"],
+    "operations": ["Smart Grid Integration", "Fault Detection", "Energy Audit"],
+    "tsk210": ["110", "60", "30"]
+  },
+  {
+    "name": "Main Data South Africa",
+    "id": "TSK_789123456",
+    "status": "New",
+    "createdAt": "2023-05-20T00:00:00.000Z",
+    "selectionCriteria": ["Oil Company", "Demo Region 5", "Demo District 5"],
+    "operations": ["Demand Side Management", "Grid Stability", "Renewable Energy Integration"],
+    "tsk210": ["70", "25", "10"]
+  },
+  {
+    "name": "Main Data Uganda",
+    "id": "TSK_321456789",
+    "status": "Running",
+    "createdAt": "2023-06-15T00:00:00.000Z",
+    "selectionCriteria": ["Transportation Company", "Demo Region 6", "Demo District 6"],
+    "operations": ["Asset Monitoring", "Performance Optimization", "Predictive Maintenance"],
+    "tsk210": ["100", "45", "18"]
+  },
+  {
+    "name": "Main Data Egypt",
+    "id": "TSK_987654321",
+    "status": "Finished",
+    "createdAt": "2023-07-10T00:00:00.000Z",
+    "selectionCriteria": ["Construction Company", "Demo Region 7", "Demo District 7"],
+    "operations": ["Load Balancing", "Data Visualization", "Energy Efficiency"],
+    "tsk210": ["85", "35", "14"]
+  },
+  {
+    "name": "Main Data Morocco",
+    "id": "TSK_789123456",
+    "status": "Finished",
+    "createdAt": "2023-08-05T00:00:00.000Z",
+    "selectionCriteria": ["Pharmaceutical Company", "Demo Region 8", "Demo District 8"],
+    "operations": ["Cybersecurity", "Asset Tracking", "Workforce Management"],
+    "tsk210": ["95", "42", "17"]
+  },
+  {
+    "name": "Main Data Tanzania",
+    "id": "TSK_654789321",
+    "status": "Running",
+    "createdAt": "2023-09-20T00:00:00.000Z",
+    "selectionCriteria": ["Manufacturing Company", "Demo Region 9", "Demo District 9"],
+    "operations": ["Demand Forecasting", "Grid Connectivity", "Load Shedding"],
+    "tsk210": ["75", "28", "12"]
+  },
+  {
+    "name": "Main Data Algeria",
+    "id": "TSK_456789123",
+    "status": "New",
+    "createdAt": "2023-10-15T00:00:00.000Z",
+    "selectionCriteria": ["Banking Institution", "Demo Region 10", "Demo District 10"],
+    "operations": ["Revenue Management", "Customer Engagement", "System Monitoring"],
+    "tsk210": ["88", "38", "16"]
+  },
+  {
+    "name": "Main Data Rwanda",
+    "id": "TSK_216894891",
+    "status": "Running",
+    "createdAt": "2023-11-10T00:00:00.000Z",
+    "selectionCriteria": ["Education Institution", "Demo Region 11", "Demo District 11"],
+    "operations": ["Distributed Generation", "Smart Lighting", "Data Analytics"],
+    "tsk210": ["115", "55", "22"]
+  },
+  {
+    "name": "Main Data Angola",
+    "id": "TSK_321456789",
+    "status": "Finished",
+    "createdAt": "2023-12-05T00:00:00.000Z",
+    "selectionCriteria": ["Hospitality Company", "Demo Region 12", "Demo District 12"],
+    "operations": ["Smart Thermostat", "Peak Load Management", "Energy Storage"],
+    "tsk210": ["105", "48", "20"]
+  },
+  {
+    "name": "Main Data Cameroon",
+    "id": "TSK_987654321",
+    "status": "Finished",
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "selectionCriteria": ["Retail Company", "Demo Region 13", "Demo District 13"],
+    "operations": ["Demand Response", "Grid Modernization", "Energy Auditing"],
+    "tsk210": ["82", "32", "13"]
+  },
+  {
+    "name": "Main Data Mozambique",
+    "id": "TSK_789123456",
+    "status": "Running",
+    "createdAt": "2024-02-15T00:00:00.000Z",
+    "selectionCriteria": ["Insurance Company", "Demo Region 14", "Demo District 14"],
+    "operations": ["Smart Appliances", "Substation Automation", "Microgrids"],
+    "tsk210": ["92", "40", "18"]
+  },
+  {
+    "name": "Main Data Senegal",
+    "id": "TSK_654789321",
+    "status": "Finished",
+    "createdAt": "2024-03-10T00:00:00.000Z",
+    "selectionCriteria": ["Technology Company", "Demo Region 15", "Demo District 15"],
+    "operations": ["Smart Meters", "Grid Optimization", "Demand Management"],
+    "tsk210": ["78", "30", "11"]
+  },
+  {
+    "name": "Main Data Namibia",
+    "id": "TSK_456789123",
+    "status": "Running",
+    "createdAt": "2024-04-05T00:00:00.000Z",
+    "selectionCriteria": ["Media Company", "Demo Region 16", "Demo District 16"],
+    "operations": ["Energy Monitoring", "Remote Asset Management", "Energy Efficiency"],
+    "tsk210": ["98", "45", "20"]
+  },
+  {
+    "name": "Main Data Zimbabwe",
+    "id": "TSK_216894891",
+    "status": "Finished",
+    "createdAt": "2024-05-20T00:00:00.000Z",
+    "selectionCriteria": ["Consulting Firm", "Demo Region 17", "Demo District 17"],
+    "operations": ["Distribution Automation", "Demand Side Response", "Energy Management"],
+    "tsk210": ["87", "38", "17"]
+  },
+  {
+    "name": "Main Data Mali",
+    "id": "TSK_321456789",
+    "status": "Running",
+    "createdAt": "2024-06-15T00:00:00.000Z",
+    "selectionCriteria": ["Logistics Company", "Demo Region 18", "Demo District 18"],
+    "operations": ["Smart Grid Infrastructure", "Load Control", "Asset Performance"],
+    "tsk210": ["108", "52", "24"]
+  },
+  {
+    "name": "Main Data Ethiopia",
+    "id": "TSK_216894891",
+    "status": "Running",
+    "createdAt": "2023-01-01T00:00:00.000Z",
+    "selectionCriteria":["Electricity Company of Ghana" , "Demo Region 1","Demo District 1"],
+    "operations":["Load Meter Profile" , "Comission with tariff","More ","And More" ,"And More"],
+    "tsk210":["120","50","20"]
+  },
+  {
+    "name": "Main Data Ethiopia",
+    "id": "TSK_216894891",
+    "status": "Queued",
+    "createdAt": "2023-01-01T00:00:00.000Z",
+    "selectionCriteria": ["Electricity Company of Ghana", "Demo Region 1", "Demo District 1"],
+    "operations": ["Load Meter Profile", "Commission with tariff", "More", "And More", "And More"],
+    "tsk210": ["120", "50", "20"]
+  },
+  {
+    "name": "Main Data Kenya",
+    "id": "TSK_987654321",
+    "status": "Finished",
+    "createdAt": "2023-02-15T00:00:00.000Z",
+    "selectionCriteria": ["Water Utility Company", "Demo Region 2", "Demo District 2"],
+    "operations": ["Meter Reading", "Billing and Invoicing", "Maintenance", "Data Analytics"],
+    "tsk210": ["80", "30", "15"]
+  },
+  {
+    "name": "Main Data Nigeria",
+    "id": "TSK_456789123",
+    "status": "New",
+    "createdAt": "2023-03-10T00:00:00.000Z",
+    "selectionCriteria": ["Gas Company", "Demo Region 3", "Demo District 3"],
+    "operations": ["Asset Management", "Demand Response", "Network Optimization"],
+    "tsk210": ["90", "40", "25"]
+  },
+  {
+    "name": "Main Data Ghana",
+    "id": "TSK_654789321",
+    "status": "New",
+    "createdAt": "2023-04-05T00:00:00.000Z",
+    "selectionCriteria": ["Telecom Company", "Demo Region 4", "Demo District 4"],
+    "operations": ["Smart Grid Integration", "Fault Detection", "Energy Audit"],
+    "tsk210": ["110", "60", "30"]
+  },
+  {
+    "name": "Main Data South Africa",
+    "id": "TSK_789123456",
+    "status": "New",
+    "createdAt": "2023-05-20T00:00:00.000Z",
+    "selectionCriteria": ["Oil Company", "Demo Region 5", "Demo District 5"],
+    "operations": ["Demand Side Management", "Grid Stability", "Renewable Energy Integration"],
+    "tsk210": ["70", "25", "10"]
+  },
+  {
+    "name": "Main Data Uganda",
+    "id": "TSK_321456789",
+    "status": "Running",
+    "createdAt": "2023-06-15T00:00:00.000Z",
+    "selectionCriteria": ["Transportation Company", "Demo Region 6", "Demo District 6"],
+    "operations": ["Asset Monitoring", "Performance Optimization", "Predictive Maintenance"],
+    "tsk210": ["100", "45", "18"]
+  },
+  {
+    "name": "Main Data Egypt",
+    "id": "TSK_987654321",
+    "status": "Finished",
+    "createdAt": "2023-07-10T00:00:00.000Z",
+    "selectionCriteria": ["Construction Company", "Demo Region 7", "Demo District 7"],
+    "operations": ["Load Balancing", "Data Visualization", "Energy Efficiency"],
+    "tsk210": ["85", "35", "14"]
+  },
+  {
+    "name": "Main Data Morocco",
+    "id": "TSK_789123456",
+    "status": "Finished",
+    "createdAt": "2023-08-05T00:00:00.000Z",
+    "selectionCriteria": ["Pharmaceutical Company", "Demo Region 8", "Demo District 8"],
+    "operations": ["Cybersecurity", "Asset Tracking", "Workforce Management"],
+    "tsk210": ["95", "42", "17"]
+  },
+  {
+    "name": "Main Data Tanzania",
+    "id": "TSK_654789321",
+    "status": "Running",
+    "createdAt": "2023-09-20T00:00:00.000Z",
+    "selectionCriteria": ["Manufacturing Company", "Demo Region 9", "Demo District 9"],
+    "operations": ["Demand Forecasting", "Grid Connectivity", "Load Shedding"],
+    "tsk210": ["75", "28", "12"]
+  },
+  {
+    "name": "Main Data Algeria",
+    "id": "TSK_456789123",
+    "status": "New",
+    "createdAt": "2023-10-15T00:00:00.000Z",
+    "selectionCriteria": ["Banking Institution", "Demo Region 10", "Demo District 10"],
+    "operations": ["Revenue Management", "Customer Engagement", "System Monitoring"],
+    "tsk210": ["88", "38", "16"]
+  },
+  {
+    "name": "Main Data Rwanda",
+    "id": "TSK_216894891",
+    "status": "Running",
+    "createdAt": "2023-11-10T00:00:00.000Z",
+    "selectionCriteria": ["Education Institution", "Demo Region 11", "Demo District 11"],
+    "operations": ["Distributed Generation", "Smart Lighting", "Data Analytics"],
+    "tsk210": ["115", "55", "22"]
+  },
+  {
+    "name": "Main Data Angola",
+    "id": "TSK_321456789",
+    "status": "Finished",
+    "createdAt": "2023-12-05T00:00:00.000Z",
+    "selectionCriteria": ["Hospitality Company", "Demo Region 12", "Demo District 12"],
+    "operations": ["Smart Thermostat", "Peak Load Management", "Energy Storage"],
+    "tsk210": ["105", "48", "20"]
+  },
+  {
+    "name": "Main Data Cameroon",
+    "id": "TSK_987654321",
+    "status": "Finished",
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "selectionCriteria": ["Retail Company", "Demo Region 13", "Demo District 13"],
+    "operations": ["Demand Response", "Grid Modernization", "Energy Auditing"],
+    "tsk210": ["82", "32", "13"]
+  },
+  {
+    "name": "Main Data Mozambique",
+    "id": "TSK_789123456",
+    "status": "Running",
+    "createdAt": "2024-02-15T00:00:00.000Z",
+    "selectionCriteria": ["Insurance Company", "Demo Region 14", "Demo District 14"],
+    "operations": ["Smart Appliances", "Substation Automation", "Microgrids"],
+    "tsk210": ["92", "40", "18"]
+  },
+  {
+    "name": "Main Data Senegal",
+    "id": "TSK_654789321",
+    "status": "Finished",
+    "createdAt": "2024-03-10T00:00:00.000Z",
+    "selectionCriteria": ["Technology Company", "Demo Region 15", "Demo District 15"],
+    "operations": ["Smart Meters", "Grid Optimization", "Demand Management"],
+    "tsk210": ["78", "30", "11"]
+  },
+  {
+    "name": "Main Data Namibia",
+    "id": "TSK_456789123",
+    "status": "Running",
+    "createdAt": "2024-04-05T00:00:00.000Z",
+    "selectionCriteria": ["Media Company", "Demo Region 16", "Demo District 16"],
+    "operations": ["Energy Monitoring", "Remote Asset Management", "Energy Efficiency"],
+    "tsk210": ["98", "45", "20"]
+  },
+  {
+    "name": "Main Data Zimbabwe",
+    "id": "TSK_216894891",
+    "status": "Finished",
+    "createdAt": "2024-05-20T00:00:00.000Z",
+    "selectionCriteria": ["Consulting Firm", "Demo Region 17", "Demo District 17"],
+    "operations": ["Distribution Automation", "Demand Side Response", "Energy Management"],
+    "tsk210": ["87", "38", "17"]
+  },
+  {
+    "name": "Main Data Mali",
+    "id": "TSK_321456789",
+    "status": "Running",
+    "createdAt": "2024-06-15T00:00:00.000Z",
+    "selectionCriteria": ["Logistics Company", "Demo Region 18", "Demo District 18"],
+    "operations": ["Smart Grid Infrastructure", "Load Control", "Asset Performance"],
+    "tsk210": ["108", "52", "24"]
+  }
+]
