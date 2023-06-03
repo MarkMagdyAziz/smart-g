@@ -1,4 +1,5 @@
 import {Component,OnInit} from '@angular/core';
+import {finalize} from 'rxjs';
 import {ITask} from 'src/app/core/interfaces/itask';
 import {DataService} from 'src/app/core/services/data.service';
 import {LoaderService} from 'src/app/core/services/loader.service';
@@ -17,10 +18,11 @@ export class TasksListComponent implements OnInit {
   }
   ngOnInit (): void {
     this.loaderService.setLoading(true)
-    this.dataService.getData().subscribe((res:ITask[][]) => {
+    this.dataService.getData().pipe(finalize(()=>{
+      this.loaderService.setLoading(false)
+    })).subscribe((res:ITask[][])=>{
       this.tasks = res;
       this.paginatedTasks = this.tasks[this.currentPage]
-      this.loaderService.setLoading(false)
     });
   }
   onPageChange (page: number) {
