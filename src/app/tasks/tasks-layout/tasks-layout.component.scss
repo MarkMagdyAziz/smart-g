@@ -9,7 +9,7 @@
 .header .header-item{
     width: 14rem;
     height: 2.5rem;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
     padding: 0 10px;
     color: #fff;
@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     border-right: 1px solid rgba(0, 0, 0, 0.16);
+    cursor: pointer;
     a {
       text-decoration: none;
       color: #fff;
@@ -51,7 +52,20 @@
   right: 60px;
   border: 1px solid  #858585;
 }
+
+
+@media (max-width: 991px){
+  .header li:last-of-type{
+    width: 22rem;
+  }
+  .plus-icon{
+    display: none;
+  }
+}
 @media (max-width: 677px){
+  .header-item{
+    font-size: 0.8em !important;
+  }
   .header li:last-of-type{
     width: 22rem;
   }

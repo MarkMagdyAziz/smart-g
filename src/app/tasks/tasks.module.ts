@@ -5,24 +5,17 @@ import {TaskItemComponent} from './task-item/task-item.component';
 import { RouterModule, Routes } from '@angular/router';
 import {TasksLayoutComponent} from './tasks-layout/tasks-layout.component';
 import {SharedModule} from '../shared/shared.module';
-
-const routes: Routes = [
-  { path: '', component: TasksLayoutComponent,
-    children: [
-      { path: '',component:TasksListComponent }
-    ]
-  },
-]
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     TasksListComponent,
     TaskItemComponent,
-    TasksLayoutComponent
+    TasksLayoutComponent,
   ],
   imports: [
-    CommonModule,RouterModule.forRoot(routes),
-    SharedModule
+    CommonModule,RouterModule,
+    SharedModule,HttpClientModule,
   ]
 })
 export class TasksModule { }

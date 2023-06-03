@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TasksLayoutComponent } from './tasks-layout.component';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 describe('TaskLayoutComponent', () => {
   let component: TasksLayoutComponent;
@@ -8,7 +9,16 @@ describe('TaskLayoutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TasksLayoutComponent ]
+      declarations: [ TasksLayoutComponent ],
+      imports:[RouterModule],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            /* Mock or provide any required properties/methods for testing */
+          }
+        }
+      ]
     })
     .compileComponents();
 

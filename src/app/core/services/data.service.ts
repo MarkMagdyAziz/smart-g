@@ -8,20 +8,19 @@ import {ITask} from '../interfaces/itask';
 })
 export class DataService {
   constructor(private http: HttpClient) { }
-  getData(): Observable<any> {
-    return this.http.get<any>('assets/dummyData.json').pipe(map((res)=>{
+  getData(): Observable<ITask[][]> {
+    return this.http.get<ITask[]>('assets/dummyData.json').pipe(map((res:ITask[])=>{
       let paginatedItems = this.chunkArray(res,6)
       return paginatedItems
     }))
   }
-  chunkArray(array: ITask[], size: number) {
-    let chunkedSlides = []
+  chunkArray(array: ITask[], size: number):ITask[][] {
+    let chunkedSlides:ITask[][] = []
     let indexStart = 0;
     while (indexStart < array.length) {
       chunkedSlides.push(array.slice(indexStart, indexStart + size));
       indexStart = indexStart + size;
     }
     return chunkedSlides
-
   }
 }

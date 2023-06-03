@@ -9,7 +9,6 @@ import {LoaderService} from './core/services/loader.service';
 })
 
 export class AppComponent implements OnDestroy,OnInit {
-  title = 'smart-g';
   loading: boolean = false
   loaderSubscription!:Subscription
   constructor(private loaderService: LoaderService){
@@ -26,6 +25,8 @@ ngOnInit(): void {
   }
 
   ngOnDestroy(): void {
+    if(this.loaderSubscription){
       this.loaderSubscription.unsubscribe()
+    }
   }
 }
