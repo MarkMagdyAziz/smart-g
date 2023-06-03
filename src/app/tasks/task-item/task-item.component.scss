@@ -22,6 +22,7 @@ $finished-color: #12bb12;
   margin-top: 10px;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 .row{
   border-top: 1px solid black; /* Add a top border */
@@ -35,11 +36,15 @@ $finished-color: #12bb12;
   background-color: #858585;
   margin: 10px 0;
 }
-.item-paragraphs{
-  margin-right: 10px
+
+.item__icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
-
-
 %r-line{
   width: 2px;
   height: 106px;
@@ -118,7 +123,15 @@ font-weight: bold;
   color: white;
 }
 @media (max-width: 991px){
+
+  .task__item{
+    margin-top: 15px;
+    border-bottom: 1px solid #808080;;
+  }
   %r-line{
-    height: 150px;
+    display: none;
+  }
+  .vertical-line{
+    display: none;
   }
 }

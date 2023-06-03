@@ -12,7 +12,6 @@ export class PaginationComponent implements OnInit {
   @Output() changePage = new EventEmitter<number>();
 
   pages: number[] = [];
-  // isLastPage:boolean=false
   ngOnInit(): void {
     const pagesCount = Math.ceil(this.total / this.limit);
     this.pages = this.range(1, pagesCount);
@@ -26,12 +25,10 @@ export class PaginationComponent implements OnInit {
       case 'prev':
         --this.currentPage
         this.changePage.emit(this.currentPage)
-        // this.isLastPage = false
         break;
         case 'next':
           ++this.currentPage
           this.changePage.emit(this.currentPage)
-          // this.isLastPage =  this.total / this.limit == this.currentPage
           break;
       default:
         break;

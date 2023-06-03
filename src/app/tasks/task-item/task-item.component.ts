@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import {ITask} from 'src/app/core/interfaces/itask';
 
 @Component({
@@ -6,13 +6,10 @@ import {ITask} from 'src/app/core/interfaces/itask';
   templateUrl: './task-item.component.html',
   styleUrls: ['./task-item.component.scss']
 })
-export class TaskItemComponent implements OnInit{
+export class TaskItemComponent {
   @Input() task: ITask = {} as ITask
-  constructor(){
+  constructor(){}
 
-  }
-
-ngOnInit(): void {}
 getStatusIcon(status:string): string{
   switch (status) {
     case 'Running':

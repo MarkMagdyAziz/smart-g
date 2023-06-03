@@ -1,8 +1,8 @@
 <ul class="pagination">
-  <li [ngClass]="{ 'page-item': true, disable: currentPage === 1 }" (click)="onNextOrPrev('prev')">
+  <li class="page-item" [ngClass]="{ disable: currentPage === 1 }" (click)="onNextOrPrev('prev')">
     <span class="page-link">Previous</span>
   </li>
-  <li *ngFor="let page of pages" [ngClass]="{ 'page-item': true, active: currentPage === page }"
+  <li *ngFor="let page of pages" class="page-item" [ngClass]="{ active: currentPage === page }"
     (click)="changePage.emit(page);">
     <span class="page-link">{{ page }}</span>
   </li>

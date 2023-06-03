@@ -1,5 +1,5 @@
 <div class="container-fluid">
- <div class="row" [ngClass]="{
+ <div class="row content" [ngClass]="{
   'status-running': task.status === 'Running',
   'status-finished': task.status === 'Finished',
   'status-queued': task.status === 'Queued',
@@ -15,7 +15,7 @@
     <div class="vertical-line"></div>
   </div>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
-      <img style="width: 40px; height: 40px; margin-right: 10px;" [src]="getStatusIcon(task.status)" alt="status icon">
+      <img  class="item__icon status-icon" [src]="getStatusIcon(task.status)" alt="status icon">
      <div class="item-paragraphs">
       <p class="sub-header">Status</p>
       <p class="item-header status">{{task.status}} </p>
@@ -23,10 +23,10 @@
     <div class="vertical-line"></div>
   </div>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
-    <img style="width: 40px; height: 40px; margin-right: 10px;" src="assets/icons/date.svg" alt="status icon">
+    <img  class="item__icon" src="assets/icons/date.svg" alt="status icon">
     <div class="item-paragraphs">
       <p class="sub-header">Creation Date</p>
-      <p class="item-header">
+      <p class="item-header createdAt">
         {{task.createdAt | date:'yyyy-MM-dd HH:mm:ss' }}
       </p>
     </div>
@@ -37,7 +37,7 @@
       <p class="sub-header">Selection Critera</p>
       <div class="item__list" *ngFor="let criteria of task.selectionCriteria">
         <div class="item__box"></div>
-        <p class="item-header">{{criteria}}</p>
+        <p class="item-header criteria">{{criteria}}</p>
       </div>
     </div>
     <div class="vertical-line"></div>
@@ -68,10 +68,12 @@
         </div>
       </div>
     </div>
+    <div style="display: flex; justify-content: space-between; min-width: 50%;">
     <div class="Rectangle-25">
       <span>Scheduled</span>
     </div>
     <img src="assets/icons/arrow.svg" alt="arrow">
+  </div>
  </div>
 </div>
 </div>
