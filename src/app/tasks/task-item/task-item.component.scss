@@ -22,6 +22,7 @@ $finished-color: #12bb12;
   margin-top: 10px;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 .row{
   border-top: 1px solid black; /* Add a top border */
@@ -34,9 +35,6 @@ $finished-color: #12bb12;
   height: 60px;
   background-color: #858585;
   margin: 10px 0;
-}
-.item-paragraphs{
-  margin-right: 10px
 }
 
 .item__icon {
