@@ -3,11 +3,11 @@ is a lightweight project that provides a paginated table for listing tasks. The 
 
 # Modules
 
-`bdd`
 * `Layout module`: Contains the layout components used throughout the application.
 * `Tasks feature module`: Contains the tasks feature and the components related to task management.
 * `Core folder`: Contains singleton services shared throughout the application.
 * `Shared folder`: Contains reusable components shared across different modules.
+
 ## Get started
 
 ### Clone the repo
