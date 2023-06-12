@@ -1,0 +1,10 @@
+// mixins
+@mixin font-size{
+  @media (max-width: $breakpoint-small) {
+    font-size: $font-sm-size;
+  }
+
+  @media (min-width: $breakpoint-small) {
+    font-size: $font-md-size;
+  }
+}
