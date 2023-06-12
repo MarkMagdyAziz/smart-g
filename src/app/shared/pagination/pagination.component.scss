@@ -1,3 +1,5 @@
+@import "../../../assets/styles/index.scss";
+
 .pagination {
   display: inline-block;
   padding-left: 0;
@@ -23,32 +25,33 @@
   z-index: 2;
   color: #fff;
   cursor: default;
-  background-color: #00afd8;
-  border-color: #00afd8;
+  background-color: $color-primary;
+  border-color: $color-primary;
 }
 .page-item.disabled .page-link,
 .page-item.disabled .page-link:focus,
 .page-item.disabled .page-link:hover {
-  color: #818a91;
+  color: $color-dark-gray;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #fff;
-  border-color: #ddd;
+  border-color: $color-dark-gray;
 }
 .page-link {
   position: relative;
   float: left;
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
-  color: #00afd8;
+  color: $color-primary;
   text-decoration: none;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid $color-dark-gray;
   cursor: pointer;
+  font-size: $font-sm-size;
 }
 .page-link:focus,
 .page-link:hover {
-  color: #00afd8;
+  color: $color-primary;
   background-color: #eceeef;
   border-color: #ddd;
 }

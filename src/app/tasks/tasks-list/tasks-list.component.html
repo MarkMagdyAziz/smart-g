@@ -1,6 +1,6 @@
 <div class="container-fluid">
-  <div style="min-height: 80vh;margin:10px;">
-    <div *ngFor="let task of paginatedTasks">
+  <div class="tasks">
+    <div *ngFor="let task of paginatedTasks" class="single-task">
       <sg-task-item [task]="task"></sg-task-item>
     </div>
   </div>

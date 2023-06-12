@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" style="min-height: 75px;">
  <div class="row content" [ngClass]="{
   'status-running': task.status === 'Running',
   'status-finished': task.status === 'Finished',
@@ -6,8 +6,8 @@
   'status-new': task.status === 'New'
 }">
  <div class="row-line"></div>
-  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
-    <div class="item-paragraphs ms-5">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 task__item">
+    <div class="item-paragraphs ms-4">
       <p class="sub-header">Name</p>
       <p class="item-header">{{task.name}}</p>
       <p class="sub-header">#{{task.id}}</p>
@@ -33,21 +33,21 @@
     <div class="vertical-line"></div>
   </div>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 task__item">
-    <div class="item-paragraphs">
+    <div class="item-paragraphs criteras">
       <p class="sub-header">Selection Critera</p>
       <div class="item__list" *ngFor="let criteria of task.selectionCriteria">
         <div class="item__box"></div>
-        <p class="item-header criteria">{{criteria}}</p>
+        <p class="criteria">{{criteria}}</p>
       </div>
     </div>
     <div class="vertical-line"></div>
   </div>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
-    <div class="item-paragraphs">
+    <div class="item-paragraphs operations">
       <p class="sub-header">Operations</p>
       <div class="item__list" *ngFor="let operation of task.operations; let i = index">
         <div class="item__box" *ngIf="i < 2" ></div>
-        <p class="item-header" *ngIf="i < 2"> {{operation}}</p>
+        <p class="item-header operation" *ngIf="i < 2"> {{operation}}</p>
         <p class="sub-header" *ngIf="i === 2 && task.operations.length > 3">
           <span style="cursor: pointer;">...view-more</span>
         </p>
@@ -55,7 +55,7 @@
     </div>
     <div class="vertical-line"></div>
   </div>
-  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2  task__item" style="display: flex; justify-content: space-around;">
     <div class="item-paragraphs">
       <p class="sub-header">Tsk (220)</p>
       <div class="item__list" *ngFor="let tsk of task.tsk210; let i = index">
@@ -68,7 +68,7 @@
         </div>
       </div>
     </div>
-    <div style="display: flex; justify-content: space-between; min-width: 50%;">
+    <div style="display: flex; justify-content: space-around; min-width: 50%;">
     <div class="Rectangle-25">
       <span>Scheduled</span>
     </div>

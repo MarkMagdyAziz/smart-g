@@ -1,137 +1,180 @@
-$running-color: #0090ff;
-$finished-color: #12bb12;
+@import "../../../assets/styles/index.scss";
 
-.status-running{
-  background-color:#e5f4ff;
+// Mixins
+@mixin task-header {
+  padding: 0;
+  margin: 0;
 }
-.status-finished{
+
+@mixin row-line($color) {
+  width: 2px;
+  height:77px;
+  margin: 0 10px 0 0;
+  position: absolute;
+  background-color: $color;
+}
+
+// Styles
+.status-running {
+  background-color: #e5f4ff;
+}
+
+.status-finished {
   background-color: #f6fff6;
 }
-.task__item .sub-header{
-  color: #a2a2a2;
-  padding: 0;
-  margin: 0;
-}
-.item-header{
-  color: #000;
-  padding: 0;
-  margin: 0;
-}
+
 .task__item {
   display: flex;
-  margin-top: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow: hidden;
+
+  & .sub-header {
+    color: $color-muted-text;
+    font-size: $font-sm-size;
+    @include task-header;
+  }
+
+  & .item-header {
+    font-size: $font-md-size;
+    @include task-header;
+  }
 }
-.row{
-  border-top: 1px solid black; /* Add a top border */
-  border-bottom: 1px solid black; /* Add a bottom border */
-  border-right: 1px solid black; /* Add a right border */
+
+.row {
+  border-top: 1px solid $color-dark-gray;
+  border-bottom: 1px solid $color-dark-gray;
+  border-right: 1px solid $color-dark-gray;
 }
+
 .vertical-line {
-  float: right;
   width: 1px;
-  height: 60px;
-  background-color: #858585;
-  margin: 10px 0;
+  height: 44px;
+  background-color: $color-dark-gray;
+  margin-left: auto;
 }
 
 .item__icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-%r-line{
-  width: 2px;
-  height: 106px;
-  margin: 0 10px 0 0;
-  position: absolute
-}
-.status-running .row-line{
-  @extend %r-line;
-  background-color:$running-color;
-}
-.status-finished .row-line{
-  @extend %r-line;
-  background-color:$finished-color;
-}
-.status-queued .row-line{
-  @extend %r-line;
-  background-color: #00afd8;
-}
-.status-new .row-line{
-  @extend %r-line;
-  background-color: #00afd8;
 }
 
-.status{
-font-size: 22px;
-font-weight: bold;
+.status-running .row-line {
+  @include row-line($color-tertiary);
 }
-.status-running .status{
-  color:$running-color;
+
+.status-finished .row-line {
+  @include row-line($color-secondary);
 }
-.status-finished .status{
-  color:  $finished-color;
+
+.status-queued .row-line,
+.status-new .row-line {
+  @include row-line($color-primary);
 }
-.status-queued .status{
-  color: #808080;
+
+.status-running .status {
+  color: $color-tertiary;
 }
-.status-new .status{
-  color:#000000;
+
+.status-finished .status {
+  color: $color-secondary;
 }
+
+.status-queued .status {
+  color: $color-dark-gray;
+}
+
+.status-new,
+.status-queued {
+  background-color: #fbfbfb;
+}
+
+.status-new .status {
+  color: #000000;
+}
+
 .item__list {
-  display: flex;align-items: center;
+  display: flex;
+  align-items: center;
 
+  & .operation,
+  & .criteria {
+    font-size: $font-sm-size;
+    @include task-header;
+  }
 }
-.item__box{
-  width: 12px;height: 12px;background-color: #c5c5c5;margin: 0 1px
+.task__item {
+  .operations, .criteras {
+    align-self: baseline;
+    margin-top: 5px;
+  }
 }
+.item__box {
+  width: 12px;
+  height: 12px;
+  background-color: $color-gray;
+  margin-right: 5px;
+}
+
 .progress-holder {
-  height: 20px;
+  height: 12.5px;
   background-color: transparent;
-  // overflow: hidden;
-  width: 100px;
-  border: 1px solid ;
+  width: 55px;
+  border: 1px solid;
 }
+
 .progress-filler {
   height: 100%;
-  background-color: #5AB8B3;
+  background-color: $color-secondary;
 }
+
 .progress-text {
   text-align: center;
   width: 20%;
 }
-.tsk-progress{
-  font-size: 11px;
-    position: relative;
-    bottom: 24px;
-    right: 2px;
-    left: 52px;
+
+.tsk-progress {
+  font-size: 10px;
+  position: relative;
+  bottom: 19px;
+  right: 2px;
+  left: 24px;
 }
 
 .Rectangle-25 {
-  width: 100px;
-  height: 30px;
+  width: 75px;
+  height: 21px;
+  margin: 8px 15.8px 3.5px 0;
   padding: 5px 12px 5px 10px;
   border-radius: 10.5px;
   background-color: #b4b4b4;
   color: white;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 991px){
 
-  .task__item{
+// media queries
+@media (max-width: $breakpoint-small) {
+  .task__item {
     margin-top: 15px;
-    border-bottom: 1px solid #808080;;
+    border-bottom: 1px solid $color-dark-gray;
   }
-  %r-line{
+.content{
+  border-left: 1px solid $color-dark-gray;
+}
+  .row-line,
+  .vertical-line {
     display: none;
   }
-  .vertical-line{
-    display: none;
-  }
+  .task__item{
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+.item-paragraphs {
+  margin-left:0 !important
+}
 }

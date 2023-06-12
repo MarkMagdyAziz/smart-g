@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
+@import "assets/styles/variables";
 @import 'bootstrap/scss/bootstrap';
+
 @font-face {
   font-family: 'Arial';
   font-style: normal;
@@ -9,14 +11,20 @@
   src: url('assets/fonts/Roboto-Black.ttf');
 }
 
+* {
+  letter-spacing: 0.5px;
+}
+
 html,
 body {
   font-family: 'Arial';
   overflow-x: hidden;
 }
+
 .container {
   max-width: 1440px;
 }
+
 img {
   max-width: 100%;
 }
